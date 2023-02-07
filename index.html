@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
+	<title>barbershop</title>
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+	<button class="scroll-to-top">⮝</button>
+
+	<header class="header" id="header">
+		<div class="header__wrapper">
+			<div class="container">
+				<div class="header__row">
+					<nav class="header__nav nav">
+						<ul class="nav__list">
+							<li class="nav__item"><a class="nav__link" href="#services">Цены</a></li>
+							<li class="nav__item"><a class="nav__link" href="#gallery">Фото</a></li>
+							<li class="nav__item"><a class="nav__link" href="#footer">Контакты</a></li>
+						</ul>
+					</nav>
+					<a class="header__logo" href="">
+						<img class="header__logo-img" src="images/logo.png" alt="logo">
+					</a>
+					<ul class="header__socials socials">
+						<li class="socials__item">
+							<a class="socials__link socials__link--mail" href=""></a>
+						</li>
+						<li class="socials__item">
+							<a class="socials__link socials__link--vk" href=""></a>
+						</li>
+						<li class="socials__item">
+							<a class="socials__link socials__link--instagram" href=""></a>
+						</li>
+						<li class="socials__item">
+							<a class="socials__link socials__link--whatsapp" href=""></a>
+						</li>
+						<li class="socials__item">
+							<a class="socials__link socials__link--youtube" href=""></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="header__box">
+			<h1 class="header__title">barbershop</h1>
+			<p class="header__text">и у тебя всё получится</p>
+			<a class="header__btn btn" href="#calendar">Записаться</a>
+		</div>
+	</header>
+
+	<div class="parallax parallax__one"></div>
+
+	<section class="services" id="services">
+		<div class="services__wrapper">
+			<h2 class="services__title title">Цены:</h2>
+			<div class="container">
+				<div class="services__row">
+					<div class="services__item">
+						<div class="services__img-wrapper">
+							<img class="services__img" src="images/services/01.png" alt="">
+						</div>
+						<div class="services__box">
+							<p class="services__item-title">Оформление</p>
+							<p class="services__item-text">Полный комплекс работ.</p>
+							<p class="services__item-price">1000</p>
+						</div>
+					</div>
+					<div class="services__item">
+						<div class="services__img-wrapper">
+							<img class="services__img" src="images/services/02.png" alt="">
+						</div>
+						<div class="services__box">
+							<p class="services__item-title">Стрижка</p>
+							<p class="services__item-text">Классическая стрижка ножницами.</p>
+							<p class="services__item-price">500</p>
+						</div>
+					</div>
+					<div class="services__item">
+						<div class="services__img-wrapper">
+							<img class="services__img" src="images/services/06.png" alt="">
+						</div>
+						<div class="services__box">
+							<p class="services__item-title">Под машинку</p>
+							<p class="services__item-text">Стрижка машинкой с одной или несколькими насадками.</p>
+							<p class="services__item-price">300</p>
+						</div>
+					</div>
+					<div class="services__item">
+						<div class="services__img-wrapper">
+							<img class="services__img" src="images/services/03.png" alt="">
+						</div>
+						<div class="services__box">
+							<p class="services__item-title">Опаска</p>
+							<p class="services__item-text">Опасная бритва — инструмент для настоящих эстетов. Открытое лезвие
+								позволяет
+								добиться идеально гладкой кожи.</p>
+							<p class="services__item-price">300</p>
+						</div>
+					</div>
+					<div class="services__item">
+						<div class="services__img-wrapper">
+							<img class="services__img" src="images/services/04.png" alt="">
+						</div>
+						<div class="services__box">
+							<p class="services__item-title">Парфюм</p>
+							<p class="services__item-text"></p>
+							<p class="services__item-price">150</p>
+						</div>
+					</div>
+					<div class="services__item">
+						<div class="services__img-wrapper">
+							<img class="services__img" src="images/services/05.png" alt="">
+						</div>
+						<div class="services__box">
+							<p class="services__item-title">Укладка</p>
+							<p class="services__item-text">В услугу входят мытье волос, сушка и укладка по форме с использованием
+								стайлингов.
+							</p>
+							<p class="services__item-price">100</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<div class="parallax parallax__two"></div>
+
+	<section class="gallery" id="gallery">
+		<h2 class="gallery__title title">Фото:</h2>
+		<div class="container">
+			<div class="gallery__buttons">
+				<button class="gallery_btn" data-filter=".decoration">Оформление</button>
+				<button class="gallery_btn" data-filter=".haircut">Стрижка</button>
+				<button class="gallery_btn" data-filter=".typewriter">Под машинку</button>
+				<button class="gallery_btn" data-filter=".caution">Опаска</button>
+				<button class="gallery_btn" data-filter=".perfume">Парфюм</button>
+				<button class="gallery_btn" data-filter=".laying">Укладка</button>
+			</div>
+			<div class="gallery__inner">
+				<div class="gallery__items mix decoration">
+					<div class="gallery__item">
+						<img class="gallery__img" src="images/gallery/decoration-01.jpg" alt="">
+					</div>
+					<div class="gallery__item">
+						<img class="gallery__img" src="images/gallery/decoration-02.jpg" alt="">
+					</div>
+					<div class="gallery__item">
+						<img class="gallery__img" src="images/gallery/decoration-03.jpg" alt="">
+					</div>
+					<div class="gallery__item">
+						<img class="gallery__img" src="images/gallery/decoration-04.jpg" alt="">
+					</div>
+					<div class="gallery__item">
+						<img class="gallery__img" src="images/gallery/decoration-05.jpg" alt="">
+					</div>
+				</div>
+				<div class="gallery__items mix haircut">
+					<div class="gallery__item">
+						<img class="gallery__img" src="images/gallery/haircut-01.jpg" alt="">
+					</div>
+					<div class="gallery__item">
+						<img class="gallery__img" src="images/gallery/haircut-02.jpg" alt="">
+					</div>
+					<div class="gallery__item">
+						<img class="gallery__img" src="images/gallery/haircut-03.jpg" alt="">
+					</div>
+				</div>
+				<div class="gallery__items mix typewriter">
+					<div class="gallery__item">
+						<img class="gallery__img" src="images/gallery/typewriter-01.jpg" alt="">
+					</div>
+					<div class="gallery__item">
+						<img class="gallery__img" src="images/gallery/typewriter-02.jpg" alt="">
+					</div>
+					<div class="gallery__item">
+						<img class="gallery__img" src="images/gallery/typewriter-03.jpg" alt="">
+					</div>
+					<div class="gallery__item">
+						<img class="gallery__img" src="images/gallery/typewriter-04.jpg" alt="">
+					</div>
+					<div class="gallery__item">
+						<img class="gallery__img" src="images/gallery/typewriter-05.jpg" alt="">
+					</div>
+					<div class="gallery__item">
+						<img class="gallery__img" src="images/gallery/typewriter-06.jpg" alt="">
+					</div>
+				</div>
+				<div class="gallery__items mix caution">
+					<div class="gallery__item">
+						<img class="gallery__img" src="images/gallery/caution-01.jpg" alt="">
+					</div>
+					<div class="gallery__item">
+						<img class="gallery__img" src="images/gallery/caution-02.jpg" alt="">
+					</div>
+					<div class="gallery__item">
+						<img class="gallery__img" src="images/gallery/caution-03.jpg" alt="">
+					</div>
+					<div class="gallery__item">
+						<img class="gallery__img" src="images/gallery/caution-04.jpg" alt="">
+					</div>
+				</div>
+				<div class="gallery__items mix perfume">
+					<div class="gallery__item">
+						<img class="gallery__img" src="images/gallery/perfume-01.jpg" alt="">
+					</div>
+					<div class="gallery__item">
+						<img class="gallery__img" src="images/gallery/perfume-02.jpg" alt="">
+					</div>
+					<div class="gallery__item">
+						<img class="gallery__img" src="images/gallery/perfume-03.jpg" alt="">
+					</div>
+				</div>
+				<div class="gallery__items mix laying">
+					<div class="gallery__item">
+						<img class="gallery__img" src="images/gallery/laying-01.jpg" alt="">
+					</div>
+					<div class="gallery__item">
+						<img class="gallery__img" src="images/gallery/laying-02.jpg" alt="">
+					</div>
+					<div class="gallery__item">
+						<img class="gallery__img" src="images/gallery/laying-03.jpg" alt="">
+					</div>
+					<div class="gallery__item">
+						<img class="gallery__img" src="images/gallery/laying-04.jpg" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<div class="parallax parallax__three"></div>
+
+	<section class="calendar" id="calendar">
+		<h2 class="calendar__title title">Запись:</h2>
+		<div class="container">
+			<div class="calendar__row">
+				<div class="calendar__clock clock">
+					<div class="clock__decorate"></div>
+					<div class="clock__decorate"></div>
+					<div class="clock__hour">
+						<div class="clock__hour-arrow" id="hr"></div>
+					</div>
+					<div class="clock__min">
+						<div class="clock__min-arrow" id="mn"></div>
+					</div>
+					<div class="clock__sec">
+						<div class="clock__sec-arrow" id="sc"></div>
+					</div>
+				</div>
+				<form class="calendar__form form" action="">
+					<input class="form__time" type="datetime-local" name="" id="">
+					<input class="form__text" type="text" name="" id="" placeholder="Как Вас зовут?">
+					<input class="form__tel" type="tel" name="" id="" placeholder="Номер телефона">
+					<button class="form__submit" type="submit">Хочу постричься</button>
+				</form>
+			</div>
+	</section>
+
+	<footer class="footer" id="footer">
+		<div class="container">
+			<div class="footer__row">
+				<div class="footer__contacts">
+					<p class="footer__contacts-city">109147, Москва</p>
+					<p class="footer__contacts-street">Таганская улица, 24с5</p>
+					<a class="footer__contacts-phone" href="tel:88001409300">8 (800) 140-93-00</a>
+					<a class="footer__contacts-mail" href="mailto:info@barber.shop">info@barber.shop</a>
+				</div>
+				<div class="footer__center">
+					<a class="footer__center-logo" href="#header">
+						<img class="footer__center-img" src="images/logo.png" alt="">
+					</a>
+					<ul class="footer__center-socials">
+						<li class="footer__center-item">
+							<a class="footer__center-link footer__center-link--mail" href=""></a>
+						</li>
+						<li class="footer__center-item">
+							<a class="footer__center-link footer__center-link--vk" href=""></a>
+						</li>
+						<li class="footer__center-item">
+							<a class="footer__center-link footer__center-link--instagram" href=""></a>
+						</li>
+						<li class="footer__center-item">
+							<a class="footer__center-link footer__center-link--whatsapp" href=""></a>
+						</li>
+						<li class="footer__center-item">
+							<a class="footer__center-link footer__center-link--youtube" href=""></a>
+						</li>
+					</ul>
+				</div>
+				<nav class="footer__nav">
+					<ul class="footer__nav-list">
+						<li class="footer__nav-item"><a class="footer__nav-link" href="#services">Цены</a></li>
+						<li class="footer__nav-item"><a class="footer__nav-link" href="#gallery">Фото</a></li>
+						<li class="footer__nav-item"><a class="footer__nav-link" href="#calendar">Записаться</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<p class="footer__copyright">barbershop@2021</p>
+	</footer>
+
+	<script src="js/main.min.js"></script>
+</body>
+
+</html>
